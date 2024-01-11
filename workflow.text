@@ -1,0 +1,12 @@
+1.Data is loaded & transformed in the power query editor.
+2.Data models are configured in the model view.
+3.Table features & calculations are added in the Data View.
+4.Visuals and reports are designed in the Report view.
+
+powerbi distinct environment:
+1.Front end
+ :build report
+ :interactive dashboard
+ :Build the data models by creating primary key and foreign key.
+2.Back end 
+   :includes powerbi query editor .
