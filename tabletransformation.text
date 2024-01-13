@@ -1,0 +1,25 @@
+1.Go to new source option
+2. select the type of file you want to load in powerbi.
+3. select file
+4.click on ok.
+5. after completion of process if you want to create or add new column based on existing column:
+   1.click on table.
+   2. click on column name
+   3. click on Add Column.
+   4.Click on extract 
+   5. New dialogue box will pop up
+   6. specify the deliminiter
+      1.Go to in advanced optins 
+      2. specfiy number of delimiters 
+    7. click on ok 
+    8.New column will be added ,rename the column.
+ 6.If you want to replace the values in the table :
+    1. Click on the column name.
+    2. Click on transform.
+    3.click on replace values.
+    4. specify values.
+    5.click on ok.
+
+  7.click on close and apply.
+  
+    
