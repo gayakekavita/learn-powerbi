@@ -1,0 +1,35 @@
+1::Column quality tool-------------------------------------
+1.Click on 'New Source'.
+2.Select the type of data.
+3.select data.
+4.click on loaad.
+5.Update column name.
+6.click on column.
+7.Go to view option
+8. Click on column quality.:
+   here you will se::
+         Valid %
+         Error %
+         Empty %
+---Default column profiling analyzes only top 1000 rows of table.
+--For changing from default see at bottom
+--you will se a option'column profiling based on 1000 rows'
+--click on this option.
+--then select  'column profiling based on entire dataset'.
+
+Now you will see the affected values of :
+1.valid %
+2.Error % 
+3.Empty %
+
+-so now hover over this option you will see a window , at the bottom of window click on 'Remove Errors/empty' .
+Again you will se the change in the values of :
+  1.valid %
+  2.error %
+  3.empty %
+
+
+-if you want to see actual errors in the table instead of going to remove errors click on 'keep errors'.
+-then you will see one table in which you will the actual errors .
+-by clicking on the errors you will see actual error message.
+
