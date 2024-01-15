@@ -1,0 +1,35 @@
+1.go to add column
+2. click on index column
+3. You will see three options:
+    1.From 0
+    2.From 1
+    3.Custom
+       here you have to specify
+       1.the starting of the index
+       2.increment number
+4.index column will be added at the end of the table 
+    if you want to move it to beginning of the table 
+    1.right click on index column
+    2.click on move 
+    3.you will see four options :
+        1.left
+        2.right
+        3.To begining
+        4.To end
+    4.select proper option .
+
+
+
+    ----------------------------------------------------------------------------------------
+    For conditional column:
+    1.Go to add column.
+    2.Click on conditional column
+    3.New window will open
+      1.You have to specify column name
+      2.You have enter the column name for which you are setting the conditions.
+      3.You have to set conditions 
+      4.If you want to add more conditions then click on 'Add Clause' 
+      5.Specify the value in else column
+          if the all of the above conditions are not satisfied 
+      6.click on save .
+      
