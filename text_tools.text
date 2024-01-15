@@ -1,0 +1,41 @@
+1.Go to Split Column option.
+  you will see:
+  1.By delimeter
+  2.By number of characters
+  3.By positions
+  4.By lowercase to uppercase
+  5.By uppercase to lowercase
+  6.By digit to non digit
+  7.By non digit to digit.
+2.select the proper option you want.
+
+
+---------------------------------------------------------------
+we have other option also:
+1.text column
+2.extract
+
+
+For format:
+1.select column
+2.click on add column
+3.click on format
+  select the proper option.
+
+
+For merge:
+1.select the columns which you want to merge.
+2. click on add column
+3.click on merge column
+4.new window will open 
+5.select separator (space,comma)
+6.give the name to merged column.
+7.end.
+
+
+For duplicate the column:
+1.select the columns which you want to merge.
+2. click on add column
+3.click on duplicate column
+6.update  the name to duplicated column.
+7.end.
