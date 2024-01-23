@@ -1,0 +1,35 @@
+-we cannot connect two fact(numeric tables) tables directly we can establish relationship between two fact tables through dimensions table.
+-we can establish relationship between fact table and dimension table.
+-we cannot establish relationship between two fact tables.
+-Two types of structure:
+   1.star structure.
+   2.snow fake structure.
+
+-two types of filters are available in the tables while establishing the relationship between them.
+  1. single
+  2.both 
+ -by default it uses single cross filter.
+ -if you want to change it from single to both then click on the arrow on the relationship line go to properties and select 
+  cross filter option to "both".
+ -use "both" filter option only it is necessary .
+
+
+----------------------------------------------
+hiding fields:
+-Hide in the Report View makes fields inaccessible from Report tab, but still available in Data and Model View.
+-This can be controlled by right clicking a field in the data or Model view ,or by selecting 'is hidden'
+ in the properties pane.
+-This is commonly used to prevent users from filtering using invalid fields,reduce clutter,or to hide irrelevant 
+ metrics from view.
+
+--Pro tip:
+   Hide the foreign key in fact(numeric) tables to force users to filter using primary key in dimensions table.
+
+-------------------------model layouts
+-Default model layout is 'All tables'.
+-We can create custom layout by simply clicking on '+' sign at the bottom of home page.
+-We can add one or more tables.
+-We can add related tables by simply clicking on right click of the table and select 'All related tables'.
+-We should remove the tables from custom layout if you dont want it, but if you select delete option it will deleted from the main model also.
+-So prefer remove option instead of delete.
+
