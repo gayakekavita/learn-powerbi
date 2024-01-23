@@ -1,0 +1,17 @@
+-click on transform data.
+-new query editor will open.
+-click on home tab.
+-click on new source.
+-select type of source and select the file.
+-click on ok.
+-see the errors like empty , duplicates in each column .
+-Remove all of the errors.
+-click on close and apply.
+-Go to Table view option.
+-click on the table .
+-click on the column.
+-go to format option and select appropriate option.
+-here data is formated.
+-you will see one more option category.
+-choose the categories option which is correct.
+-go to model view.
