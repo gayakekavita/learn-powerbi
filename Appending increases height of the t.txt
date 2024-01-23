@@ -1,0 +1,1 @@
+Appending increases height of the table beacuse it adds row to the tablse.

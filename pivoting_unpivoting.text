@@ -1,0 +1,19 @@
+----for unpivoting
+
+1.Go to transform data  then query editor will open.
+2. Click on home .
+3. Click on new source.
+4.select the file you want and load it.
+5. then select the column which you want to unpivot .
+6. click on transform.
+7.click on unpivot option.
+    -Unpivot columns.
+    -Unpivot other columns.
+    -Unpivot only selected columns.
+
+
+--for pivoting 
+1. select the column which are unpivoted .
+2. click on transform.
+3.click on pivot option.
+    

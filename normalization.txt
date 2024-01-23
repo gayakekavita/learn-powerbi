@@ -1,0 +1,16 @@
+Normalization is a process organizing the tables and columns in a relational database to reduce the redundacy and preserve data integrity.
+Its commanly used for:
+=Elimninate redundant data
+=Minimize the errors and anomalies from data modification.
+=Simplify queries and structure of database for meaningful analysis.
+
+Data models generally contain two types of tables:
+                          1.fact("data") table.
+                          2.dimension("lookup") table.
+
+-fact tables contains numerical values or metrics used for summarization (sales,orders,transactions).
+-Dimension tables contain descriptive attributes used for filtering and grouping (products,customers,dates,stores ,etc).
+
+
+
+

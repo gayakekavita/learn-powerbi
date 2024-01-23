@@ -1,0 +1,11 @@
+In this operation we are going to merge two tables based on the common column between these two tables.
+1.select first table,
+2.Go to transform
+3.click on combine
+4.click on merge query
+5. new window  will open
+6.select the second table
+7.select the column name by which you are going to perform merge operation.
+8.click on ok.
+
+merging makes table wider because it adds columns to existing table.

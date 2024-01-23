@@ -1,0 +1,14 @@
+1.Go to transform data new query editor will open.
+2.click on Home tab .
+3.click on new source .
+4.select the type of files you want to load and load the file.
+5.click on close and apply.
+6.Click on report view.
+7.Click on insert.
+8.select  the visual form like matrix from.
+7.click on add values.
+8.select the table and its columns .
+9.you will see the data models basic building as per you are adding values into it.
+
+
+

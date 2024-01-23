@@ -1,0 +1,10 @@
+1.Go to transform data
+2.new query editor will open
+3.click on new source.
+4.select the type of file and select the file and click on ok.
+5. click on close and  apply.
+6. click on model view.
+7. select each table click on properties and select a column which have distinct and unique values.
+8.then click on the table and go to manage relations and add first table which primary key is referred by another table select two tables .
+9.click on ok.
+-It will create relationships between two or more tables.
