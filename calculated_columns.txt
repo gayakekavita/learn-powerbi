@@ -1,0 +1,5 @@
+-Calculated columns allow you to add new , formula-based columns to tables in a model.
+-Calculated columns refer to entire table or columns.
+-Calculated columns generate values for each row , which are visible within tables in the Data view.
+-Calculated columns understand row context ,they are great for defining properties based on information in each row ,but genarally useless for aggregration.
+

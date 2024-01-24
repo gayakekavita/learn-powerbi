@@ -1,0 +1,4 @@
+-Hierarchies are groups of the columns that reflects multiple level of granularity.
+-Hierarchies are treated as a single item in tables and reports ,allowing users to 'drill up' and 'drill down' through each level.
+----for example:
+   --- Geography hierarchy might include country,state,city etc.

@@ -1,0 +1,66 @@
+-Calculated columns allow you to add new , formula-based columns to tables in a model.
+-Calculated columns refer to entire table or columns.
+-Calculated columns generate values for each row , which are visible within tables in the Data view.
+-Calculated columns understand row context ,they are great for defining properties based on information in each row ,but genarally useless for aggregration.
+-Calculated columns are typically used for filtering and grouping data,rather than creating aggregrate  numerical values.
+
+
+-------------------------DAX
+--For creating new column
+ Syntax:
+column_name=IF(logicaltest, Resulttrue,Resultfalse)
+
+
+Quantity Type = IF(
+    'Sales Data'[OrderQuantity]>1 ,
+     "Multiple items",
+     "Single Item"
+    )
+
+-Measures are DAX formulas used to generate new calculated values.
+- use measures to create numerical,calculated values that can be analyzed in the "values" field of a report visual.
+-Two types of measures:
+   1. Implicit measures
+   2.Explicit measures
+-Implicit measures are created when you drag raw numerical fields into a report visual and manually select an aggregration mode(Sum, Average, Min, Max ,Count, etc).
+-Explicit measures are created when you actually write a DAX formula and define a new measure that can be used within the model.
+-Implicit measures are only accessible within the specific visulization in which they were created and cannot be referenced elsewhwhere.
+-Explicit measures can be used anywhere in the report ,and referenced by other DAX calculation to create "measure trees".
+
+
+--Quick measures automatically create formulas based on pre-built templates or natural language prompts.
+-Quick measures calculations can be used to build measures using predefined templates .
+-Quick measure suggestions can be used to find suggested measures based on natural language queries .
+
+--Pro Tip:
+Measure Table :
+Its common best practice to create a dedicated table to store your measures ;
+This will help you stay organized ,find measures quickly and allow group related measures into folders.
+Option 1:
+         1.Go to Report View .
+         2.Click on 'Enter Data' into power query .It will load the table to the data model -table is visible in Power  
+            Query.
+         3.Add a table name and click Ok to load the data model.
+Option 2:(Using DAX):
+         1.Go to table view.
+         2. click on 'New table'.
+         3. DAX expression editor will be open .
+         4.  Write DAX expression.
+             Measure Table(DAX) = {" "}
+             [This DAX expression will create a table called as 'Measure Table(DAX)' with one row and one column of empty     
+              value].
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
