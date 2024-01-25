@@ -1,0 +1,54 @@
+1. TODAY()/NOW():  Returns the current date or current time.
+
+2.DAY/MONTH/YEAR(Date) : Returns the day of month (1-31)month of the year(1-12) , or year of a given date.
+
+3.:Hour/Minute/Second(Datetime): Returns the hour (0-23) ,minute(0,59) or second (0-59) of a given datetime value.
+
+4.WEEKDAY/WEEKNUM (Date,[ReturnType]):Returns a weekday from 1(Sunday) to 7 (Saturday) ,or the week # of the year.
+
+5.EMONTH(Startdate,Months) : Returns the date of the last day of the month , +/- a specified number of months.
+
+6.DATEDIFF(Date1,Date2,Interval): Returns the difference between two dates based on a given interval(day,hour,year,etc).
+
+
+
+Day of week = 
+WEEKDAY(
+    'AdventureWorks Calendar Lookup'[Date].[Date]
+)
+
+
+Day = 
+DAY(
+    'AdventureWorks Calendar Lookup'[Date].[Date]
+)
+
+
+Month = 
+MONTH(
+    'AdventureWorks Calendar Lookup'[Date].[Date]
+)
+
+
+
+Year = 
+YEAR(
+    'AdventureWorks Calendar Lookup'[Date].[Date]
+)
+
+
+week day = 
+IF(
+    'AdventureWorks Calendar Lookup'[day of week]=6 || 'AdventureWorks Calendar Lookup'[day of week]=7,
+    "Weekend",
+    "Weekday"
+)
+
+
+week day = 
+IF(
+    'AdventureWorks Calendar Lookup'[day of week] IN{6,7},
+    "Weekend",
+    "Weekday"
+)
+
