@@ -1,0 +1,41 @@
+LEN(text): Returns the number of characters in a string.
+-----------------------------------------------------------------------------------------------------------------------
+CONCATENATE(text1,text2): Joins two strings into one.
+
+     Full Name = 
+'AdventureWorks Customer Lookup'[Prefix] & " " & 'AdventureWorks Customer Lookup'[FirstName] &" " & 'AdventureWorks Customer Lookup'[LastName]
+------------------------------------------------------------------------------------------------------------------------
+UPPER/LOWER(text) : Converts a string to upper or lower case .
+
+LEFT/RIGHT(Text,[NumChars]) : Returns the number of characters from the start /end of the string.
+
+MID(Text,StartPosition,NumChars): Returns the number of characters from the middle of a text string.
+
+
+SUBSTITUTE(Text,OldText,NewText,[InstanceNumber]) :
+      Replaces an instance of existing text with new text in a string.
+
+SEARCH(FindText,WithinText,[StartPosition],[NotFoundValue]) :
+Returns the position where a specified string or character is found ,reading left to right.
+
+
+
+
+SKU category = 
+LEFT(
+    'AdventureWorks Product Lookup'[ProductSKU],
+    SEARCH(
+        "-",'AdventureWorks Product Lookup'[ProductSKU]
+    )
+    -1
+)
+
+
+
+
+SKU positions = 
+
+    SEARCH(
+        "-",'AdventureWorks Product Lookup'[ProductSKU]
+    )
+
