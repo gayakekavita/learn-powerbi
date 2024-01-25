@@ -1,0 +1,13 @@
+CALCULATE(Expression,[Filter1],[Filter2],....):
+
+Expression= Name of an existing measure or a DAX formula for a valid measure.
+
+
+Filter1,Filter2,...= A Boolean(True/False) expression that defines a filter .
+
+
+red sells=
+CALCULATE('product lookup'[Quantity Sold], 'product lookup'[color]='red')
+
+
+
