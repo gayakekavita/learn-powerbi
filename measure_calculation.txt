@@ -1,0 +1,204 @@
+step by step measure calculation:
+ 1.Filter context is detected & applied .
+ 2.Filters flow "downstream" to related tables.
+ 3.Measure evaluates against the filtered table.
+
+
+DAX syntax:
+
+measure_name=function_name(table_name[column_name])
+
+
+
+Example: 
+Total Quantity=SUM(Transactions[quantity])
+
+here Total Quantity = Measure Name
+SUM = Aggregrate function
+Transactions = Table name
+quantity = column name
+
+
+DAX operators:
+
+1.Arithmetic Operator:
+   + (Addition)
+   - (Subtraction)
+   * (Multiplication)
+   / (Division)
+   ^ (Exponent)
+
+
+2.Comparision operator :
+  =  (Equal to)
+  >  (Greater than)
+  <  (Less than)
+  >= (Greater than or Equal to )
+  <= (Less than or Equal to)
+  <> (Not equal to)
+
+
+3.Logical Operator :
+  &    [Concate two values to produce one text string]
+  &&   [Create an AND condition between two logical expressions]
+  ||   [Create an OR condition between two logical expressions]
+  IN   [Create a logical OR condition based on a given list]
+
+
+DAX function categories:
+1.MATH & STATS 
+    SUM
+    MAX
+    MIN
+    Average
+    divide
+    count
+    distinct count
+
+    Iterator function:
+    sumx
+    averagex
+    minx
+    maxx
+    countx
+
+2.LOGICAL
+
+    IF
+    IFERROR
+    AND
+    OR 
+    NOT
+    SWITCH
+    TRUE 
+    FALSE
+   
+3.TEXT
+      
+    Concatenate
+    Format
+    Left/Mid/Right
+    Upper/Lower
+    Len
+    Search/Find
+    Replace
+    Substitute
+    Trim 
+
+
+4.FILTER
+
+   Calculate
+   Filter
+   All
+   AllExcept
+   Allselected
+   Keepfilters
+   Removefilters
+   Selectedvalue
+
+
+5.TABLE
+
+  Summarize
+  Addcolumns
+  Union
+  Intersect
+  Topn
+  Distinct
+  Genarateseries
+  
+  
+6.DATE & TIME 
+7.RELATIONSHIP 
+
+
+
+syntax:
+SUM(column_name)
+Average(column_name)
+Max(ColumnNameOrScaler,[Scaler2])
+Min(ColumnNameOrScaler1,[Scaler2])
+Divide(Numerator,Denomitor)
+
+Counting Functions:
+1.COUNT(column_name) 
+   Counts the number of non-empty cells in a column.
+
+2.COUNTA(column_name):
+   Counts the number of non-empty cells including boolean values in a column.
+
+3.DISTINCTCOUNT(column_name):
+   Counts the number of distinct values in a column.
+
+4. COUNTROWS[tablename]
+   Counts the number rows in the specified table or a table defined by an expression.
+
+
+
+
+Logical operators:
+
+example:
+Parent = 
+IF('AdventureWorks Customer Lookup'[TotalChildren]>0,"yes","no")
+
+
+Month Number =
+SWITCH('Calender Lookup'[Month Name],
+'january',1,
+'february'',2,
+'march',3,
+)
+
+
+
+Price Point = 
+ SWITCH(
+    TRUE(),
+    'AdventureWorks Product Lookup'[ProductPrice]>500 , "High",
+     'AdventureWorks Product Lookup'[ProductPrice]>100 ,"Medium",
+     "Low")
+
+
+Customer Priority = 
+IF(
+    'AdventureWorks Customer Lookup'[Parent]="yes" && 'AdventureWorks Customer Lookup'[AnnualIncome]>10000, "priority",
+    "standard"
+)
+
+
+AnnualIncome level = 
+IF(
+    'AdventureWorks Customer Lookup'[AnnualIncome]>=150000,"Very High",
+   IF( 'AdventureWorks Customer Lookup'[AnnualIncome]>=100000, "High",
+    IF('AdventureWorks Customer Lookup'[AnnualIncome]>=50000,"Medium",
+    "Low"))
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
