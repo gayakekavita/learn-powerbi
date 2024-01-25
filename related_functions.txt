@@ -1,0 +1,14 @@
+RELATED():
+Returns the related values in each row of the table based on relationships with other tables.
+
+RELATED(ColumnName)
+
+PRO TIP: 
+Instead of using RELATED to create extra columns (which increases file size), nest it within measures like FILTER or SUMX
+
+
+
+Retail Price = 
+RELATED(
+    'AdventureWorks Product Lookup'[ProductPrice]
+)
